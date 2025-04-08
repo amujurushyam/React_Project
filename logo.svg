@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Gradient definitions -->
+  <defs>
+    <!-- Modern gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E293B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Vibrant gradient for elements -->
+    <linearGradient id="elementGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Logo highlight gradient -->
+    <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F43F5E;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Text shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+  
+  <!-- Main circle background -->
+  <circle cx="150" cy="150" r="140" fill="url(#bgGradient)" />
+  
+  <!-- Modern circular frame -->
+  <path d="M150,15 A135,135 0 0,1 285,150 A135,135 0 0,1 150,285" 
+        stroke="url(#elementGradient)" stroke-width="4" fill="none" stroke-linecap="round" />
+  
+  <!-- Stylized "P" for PodStream -->
+  <path d="M130,100 L130,200 M130,105 C130,105 180,105 180,140 C180,175 130,175 130,175" 
+        stroke="url(#elementGradient)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Play button triangle -->
+  <polygon points="165,140 145,125 145,155" fill="url(#highlightGradient)" filter="url(#glow)" />
+  
+  <!-- Sound waves (simplified) -->
+  <path d="M190,120 Q200,140 190,160" stroke="url(#elementGradient)" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M200,110 Q215,140 200,170" stroke="url(#elementGradient)" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M210,100 Q230,140 210,180" stroke="url(#elementGradient)" stroke-width="6" fill="none" stroke-linecap="round" />
+  
+  <!-- Clean typography -->
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white" filter="url(#shadow)">PODSTREAM</text>
+</svg>
